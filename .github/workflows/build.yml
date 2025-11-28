@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Install wkhtmltopdf
         run: |
@@ -27,7 +27,7 @@ jobs:
           wkhtmltopdf public/resume.html public/resume.pdf
 
       - name: Upload timestamped PDF artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: resume-${{ steps.timestamp.outputs.ts }}
           path: public/resume.pdf
