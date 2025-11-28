@@ -1,0 +1,43 @@
+name: Build Resume PDF
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install wkhtmltopdf
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wkhtmltopdf
+
+      - name: Generate timestamp
+        id: timestamp
+        run: echo "ts=$(date +'%Y%m%d-%H%M')" >> $GITHUB_OUTPUT
+
+      - name: Build PDF from HTML
+        run: |
+          wkhtmltopdf public/resume.html public/resume.pdf
+
+      - name: Upload timestamped PDF artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume-${{ steps.timestamp.outputs.ts }}
+          path: public/resume.pdf
+
+      - name: Commit latest resume.pdf to repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add public/resume.pdf
+          git commit -m "Update latest resume.pdf" || echo "No changes to commit"
+          git push
+
+
