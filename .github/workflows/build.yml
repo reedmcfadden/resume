@@ -24,7 +24,9 @@ jobs:
 
       - name: Build PDF from HTML
         run: |
-          wkhtmltopdf public/resume.html public/resume.pdf
+          wkhtmltopdf \
+            --enable-local-file-access \
+            public/resume.html public/resume.pdf
 
       - name: Upload timestamped PDF artifact
         uses: actions/upload-artifact@v4
@@ -39,5 +41,4 @@ jobs:
           git add public/resume.pdf
           git commit -m "Update latest resume.pdf" || echo "No changes to commit"
           git push
-
 
