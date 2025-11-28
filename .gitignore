@@ -1,4 +1,4 @@
-src/
+private/
 *.backup
 *.bak
 *.private
