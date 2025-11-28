@@ -1,4 +1,11 @@
+# Ignore private resume content
 private/
-*.backup
-*.bak
-*.private
+*private*.html
+*private*.css
+
+# Ignore local artifacts
+*.pdf
+*.html~
+*.css~
+*.tmp
+
