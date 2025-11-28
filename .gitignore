@@ -4,8 +4,6 @@ private/
 *private*.css
 
 # Ignore local artifacts
-*.pdf
 *.html~
 *.css~
 *.tmp
-
