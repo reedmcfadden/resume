@@ -29,7 +29,7 @@ jobs:
         run: |
           wkhtmltopdf \
             --enable-local-file-access \
-            public/resume.html public/resume.pdf
+            public/index.html public/resume.pdf
 
       - name: Upload timestamped PDF artifact
         uses: actions/upload-artifact@v4
