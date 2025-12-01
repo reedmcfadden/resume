@@ -29,19 +29,19 @@ jobs:
         run: |
           wkhtmltopdf \
             --enable-local-file-access \
-            index.html resume.pdf
+            index.html reed-m-mcfadden-resume.pdf
 
       - name: Upload timestamped PDF artifact
         uses: actions/upload-artifact@v4
         with:
           name: resume-${{ steps.timestamp.outputs.ts }}
-          path: resume.pdf
+          path: reed-m-mcfadden-resume.pdf
 
-      - name: Commit latest resume.pdf to repo
+      - name: Commit latest reed-m-mcfadden-resume.pdf to repo
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add resume.pdf
-          git commit -m "Update latest resume.pdf" || echo "No changes to commit"
+          git add reed-m-mcfadden-resume.pdf
+          git commit -m "Update latest reed-m-mcfadden-resume.pdf" || echo "No changes to commit"
           git push
 
