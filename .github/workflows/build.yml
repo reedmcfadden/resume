@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: resume-${{ steps.timestamp.outputs.ts }}
-          path: reed-m-mcfadden-resume.pdf
+          path: Reed_McFadden_Resume.pdf
 
       - name: Commit latest reed-m-mcfadden-resume.pdf to repo
         run: |
