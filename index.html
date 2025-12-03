@@ -82,29 +82,33 @@ li {
 <div class="meta">TS/SCI • linkedin.com/in/reed-mcfadden • github.com/reedmcfadden • reedmcfadden.github.io/resume</div>
 
 <h2>Summary</h2>
-<p>DevOps/Linux engineer focused on automation, infrastructure-as-code, cloud platforms, and secure Linux systems. Experienced with RHEL, Ansible, Terraform, AWS, CI/CD pipelines, observability tooling, and hardened DoD environments. Passionate about building reliable, scalable, and fully automated infrastructure.</p>
+<p><p>RHCE-certified Linux Engineer with TS/SCI clearance, specializing in secure RHEL enterprise environments, Linux automation, DISA STIG compliance, and classified infrastructure operations. Experienced with Ansible, Satellite/IDM, SELinux policy management, enclave patching workflows, and virtualization platforms. Focused on strengthening mission-critical systems through hardening, configuration automation, and reliable RHEL lifecycle management.</p>
 
 <h2>Technical Skills</h2>
 <ul>
   <li>RHCE, RHCSA, Security+, Linux+, AWS Cloud Practitioner</li>
   <li>Linux (RHEL, Rocky), virtualization (vSphere, ESXi, KVM, Proxmox), containers (Docker, Podman)</li>
   <li>Infrastructure-as-Code: Ansible, Terraform, YAML, Git, Bash, Perl</li>
-  <li>CI/CD: GitHub Actions, GitLab CI/CD, artifact pipelines, automated testing workflows</li>
-  <li>AWS: EC2, IAM, VPC, S3, security groups, cloud automation</li>
-  <li>Security &amp; Compliance: STIGs, SELinux, PKI, system hardening, vulnerability remediation</li>
+  <li>CI/CD: Understanding of Git-based workflows, pipeline concepts, and automated testing integration</li>
+  <li>AWS (EC2, IAM, S3 basics; foundational cloud familiarity)</li>
+  <li>Enclave Operations: classified/unclassified RHEL environments, patch baselines, compliance reporting, secure change control</li>
+  <li>Security &amp; Compliance: DISA STIGs, SCAP, ACAS/Nessus, SELinux (MLS/RBAC), PKI, system hardening, audit and compliance automation</li>
   <li>Observability: Grafana, Loki, Promtail, Telegraf, InfluxDB</li>
+  <li>RHEL Platform Tools: Red Hat Satellite, IDM/FreeIPA, Insights, image building, kickstart/pxe provisioning</li>
 </ul>
 
 <h2>Experience</h2>
 
 <div class="dates">September 2025 – Present</div>
-<p class="job-title">Linux Engineer</p>
+<p class="job-title">Linux Systems and Integration Engineer</p>
 <p class="company">General Dynamics Mission Systems (GDMS)</p>
 <ul>
-  <li>Automated provisioning, configuration, and compliance of secure Linux systems using Ansible and scripted workflows.</li>
-  <li>Contributed to configuration management workflows, documentation standards, and peer review processes.</li>
-  <li>Developed automated system and UI validation tests integrated into CI pipelines using Robot Framework and Selenium.</li>
-  <li>Contributed to CI/CD pipeline design, artifact management standards, and automation strategy for testing and infrastructure workflows.</li>
+  <li>Configured and validated RHEL-based thick-client workstations according to program baselines and security requirements.</li>
+  <li>Assisted with racking, cabling, and initial configuration of lab servers, network switches, and storage equipment for classified test environments.</li>
+  <li>Created, updated, and peer-reviewed technical documentation, installation procedures, and configuration guides to ensure repeatable Linux system builds.</li>
+  <li>Supported ESXi host patching and version upgrades during scheduled maintenance cycles.</li>
+  <li>Provided hands-on Linux support for integration and test teams, including troubleshooting workstation issues, updating configuration files, and supporting test execution.</li>
+  <li>Participated in test automation planning sessions, contributing Linux requirements and validation criteria even though automation efforts were not fully adopted by the team.</li>
 </ul>
 
 <div class="dates">March 2025 - June 2025</div>
@@ -113,26 +117,26 @@ li {
 <ul>
   <li>Coordinated team workflows and reporting, ensuring continuous delivery of infrastructure tasks during team lead absence.</li>
   <li>Automated the application of quarterly STIG changes across 50 RHEL 8 systems using Ansible, significantly enhancing security posture and reducing compliance time by 80%.</li>
-  <li>Updated fapolicyd trust policies to support secure application execution and access workflows.</li>
+  <li>Updated fapolicyd trust and whitelisting policies to enforce secure application execution on hardened RHEL workstations.</li>
   <li>Implemented SELinux RBAC mappings to enforce identity boundaries and support Kerberos authentication.</li>
-  <li>Diagnosed and remediated vulnerability scanning issues, improving security baseline adherence across RHEL systems.</li>
+  <li>Resolved ACAS/Nessus scan failures and coordinated remediation actions to maintain RHEL STIG compliance across 50+ systems.</li>
   <li>Automated Linux patching workflows using Ansible and Satellite to enforce configuration drift control.</li>
   <li>Mentored junior Linux administrators, providing guidance and resolving technical blockers to maintain team productivity.</li>
-  <li>Worked with Red Hat IDM and Satellite daily to verify everything was running as expected.</li>
+  <li>Administered Red Hat Satellite and IDM for patch baselining, certificate/identity access, and configuration drift enforcement.</li>
 </ul>
 
 <div class="dates">September 2024 - February 2025</div>
 <p class="job-title">Linux Administrator</p>
 <p class="company">Stratascorp</p>
 <ul>
-  <li>Scanned and remediated RHEL 8 STIGs across secure DoD networks.</li>
+  <li>Performed DISA STIG scanning, remediation, and automated hardening of RHEL 8 systems across DoD classified and unclassified enclaves.</li>
   <li>Synchronized RHEL 8 package updates across classified environments to maintain system compliance.</li>
-  <li>Maintained and updated enterprise vulnerability scanning platforms to ensure continuous compliance.</li>
-  <li>Resolved service-level issues impacting security scanning platform availability.</li>
+  <li>Maintained ACAS/Nessus infrastructure and ensured continuous vulnerability compliance across mission systems.</li>
+  <li>Diagnosed and restored scanning platform service disruptions to maintain vulnerability assessment uptime.</li>
   <li>Developed standardized automation scripts and scheduled jobs to reduce operational toil and streamline maintenance workflows.</li>
   <li>Helped with running stig evaluations on multiple servers on classified and unclassified networks and implemented and scripted remediations for automation.</li>
   <li>Ensured availability of compliance and scanning services by maintaining plugin, service, and update workflows.</li>
-  <li>Improved system reliability by diagnosing NTP drift issues and implementing automated synchronization checks.</li>
+  <li>Improved system reliability by resolving enterprise NTP drift and implementing automated time-sync enforcement scripts.</li>
   <li>Performed normal linux server maintenance, including package updates, downtime resolution, and system hardening.</li>
 </ul>
 
@@ -142,29 +146,28 @@ li {
 <ul>
   <li>Diagnosed and resolved hardware-integration, kernel, and system-level issues in hardened Linux environments.</li>
   <li>Completed and booted into Linux From Scratch (LFS) as part of an onboarding challenge.</li>
-  <li>Implemented automated log offloading using Go/Python to ship system logs from hardened Linux endpoints to central logging infrastructure.</li>
+  <li>Automated secure log offloading pipelines (Go/Python) for hardened RHEL-based endpoints into centralized logging infrastructure.</li>
   <li>Coded sections of a desktop application with the backend in Rust, and the frontend in React JavaScript.</li>
   <li>Diagnosed and resolved virtualization and kernel-level issues on hardened Linux systems.</li>
-  <li>Built reproducible system images using Yocto, BitBake, and containerized build workflows.</li>
-  <li>Automated bootloader configuration and filesystem verification workflows using Perl scripting.</li>
-
+  <li>Built reproducible RHEL-based system images using Yocto/BitBake and controlled, containerized build workflows.</li>
+  <li>Automated GRUB bootloader configuration, filesystem validation, and recovery workflows via Perl scripting.</li>
 </ul>
 
 <div class="dates">July 2020 - August 2022</div>
 <p class="job-title">Computer Scientist</p>
 <p class="company">United States Air Force</p>
 <ul>
-  <li>Diagnosed and resolved critical data-processing failures in aviation mission-support systems.</li>
-  <li>Implemented updated communication logic to integrate aviation systems with modern radio hardware.</li>
+  <li>Diagnosed and resolved mission-system data processing issues in secure Air Force environments.</li>
+  <li>Implemented updated communication logic for secure aviation software systems integrating with modern radio hardware.</li>
   <li>Built automated unit and integration tests using C++ and Google Test to reduce manual testing overhead.</li>
 </ul>
 
 <h2>DevOps & Cloud Projects</h2>
 <ul>
-  <li>Built automated configuration and provisioning workflows using <strong>Ansible</strong> roles and playbooks to manage RHEL/Rocky Linux nodes in a multi-machine lab environment.</li>
+  <li>Built automated RHEL/Rocky Linux provisioning and configuration workflows using <strong>Ansible</strong> roles and playbooks to replicate enclave automation patterns in a lab environment.</li>
+  <li>Created Linux hardening and compliance scripts to practice DISA STIG, SCAP, and SELinux policy automation in a controlled environment.</li>
   <li>Created CI/CD pipelines using <strong>GitHub Actions</strong> to lint and validate infrastructure code, run automated tests, and publish versioned build artifacts.</li>
   <li>Built Linux automation scripts (Bash, Python) to reduce manual toil for patching, log management, system validation, and recurring maintenance tasks.</li>
-  <li>Set up a multi-node virtualization lab using <strong>Proxmox/KVM</strong> for testing automation pipelines, configuration management, and infrastructure changes in a controlled environment.</li>
 </ul>
 
 <h2>Education</h2>
