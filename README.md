@@ -4,5 +4,5 @@ View the HTML résumé here:
 ➡️ https://reedmcfadden.github.io/resume/
 
 Download the PDF here:  
-➡️ ./public/reed-m-mcfadden-resume.pdf
+➡️ ./public/Reed\_McFadden\_Resume.pdf
 
